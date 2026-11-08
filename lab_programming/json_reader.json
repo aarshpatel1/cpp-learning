@@ -1,0 +1,16 @@
+{
+	"student": {
+		"name": "Aarsh",
+		"age": 22,
+		"address": {
+			"city": "Surat",
+			"state": "Gujarat"
+		},
+		"subjects": ["C++", "Python", "JavaScript"],
+		"marks": {
+			"maths": 100,
+			"science": 99
+		}
+	},
+	"active": true
+}
