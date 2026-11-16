@@ -33,8 +33,7 @@ class Queue {
         if (isEmpty()) {
             front = 0;
         }
-        rear++;
-        arr[rear] = value;
+        arr[rear++] = value;
     }
 
     int dequeue() {
