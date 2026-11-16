@@ -82,29 +82,38 @@
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+// int main() {
+//     vector<int> nums = {4, 1, 2, 1, 2};
+// 	// vector<int> nums = {1, 0, 1};
+// 	// int index_to_remove = 2;
+
+//     // cout << "capacity: " << nums.capacity() << endl;
+//     // for (int i = 0; i < nums.size(); i++) {
+//     //     if (i == index_to_remove)
+//     //         nums.erase(nums.begin() + index_to_remove);
+//     //     cout << nums.size() << endl;
+//     // }
+//     // cout << "capacity: " << nums.capacity() << endl;
+
+//     for (int i = 0, j = nums.size() - 1; i < nums.size(); i++) {
+//         if (nums[i] == nums[j]) {
+//             nums.erase(nums.begin() + i);
+//             nums.erase(nums.begin() + j);
+//         }
+//     }
+// 	cout << nums[0];
+
+//     return 0;
+// }
+
 #include <iostream>
-#include <vector>
-using namespace std;
 int main() {
-    vector<int> nums = {4, 1, 2, 1, 2};
-	// vector<int> nums = {1, 0, 1};
-	// int index_to_remove = 2;
-
-    // cout << "capacity: " << nums.capacity() << endl;
-    // for (int i = 0; i < nums.size(); i++) {
-    //     if (i == index_to_remove)
-    //         nums.erase(nums.begin() + index_to_remove);
-    //     cout << nums.size() << endl;
-    // }
-    // cout << "capacity: " << nums.capacity() << endl;
-
-    for (int i = 0, j = nums.size() - 1; i < nums.size(); i++) {
-        if (nums[i] == nums[j]) {
-            nums.erase(nums.begin() + i);
-            nums.erase(nums.begin() + j);
-        }
-    }
-	cout << nums[0];
-
+    int a = 3.14;
+    int b = 22.31;
+    float answer = b % a;
+    std::cout << answer;
     return 0;
 }
