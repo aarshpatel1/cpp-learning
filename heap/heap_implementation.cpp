@@ -3,31 +3,30 @@
 void Insert(int arr[], int n) {
     int i = n, temp = arr[i];
 
-    while (i > 0 && temp > arr[i / 2]) {
-        arr[i] = arr[i / 2];
-        i /= 2;
+    while (i > 0 && temp > arr[(i - 1) / 2]) {
+        arr[i] = arr[(i - 1) / 2];
+        i = (i - 1) / 2;
     }
     arr[i] = temp;
 }
 
 int Delete(int arr[], int n) {
-    int temp = arr[n];
     int value = arr[0];
     arr[0] = arr[n];
     arr[n] = value;
 
     int i = 0;
-    int j = i * 2 + 1;
-    while (j < n - 1) {
-        if (arr[j + 1] > arr[j]) {
+    int j = (i * 2) + 1;
+    while (j < n) {
+        if ((j + 1) < n && arr[j + 1] > arr[j]) {
             j += 1;
         }
         if (arr[i] < arr[j]) {
-            int x = arr[i];
+            int temp = arr[i];
             arr[i] = arr[j];
-            arr[j] = x;
+            arr[j] = temp;
             i = j;
-            j *= 2;
+            j = i * 2 + 1;
         } else {
             break;
         }
